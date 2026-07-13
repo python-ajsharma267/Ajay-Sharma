@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajay Sharma - Personal Portfolio. Analyst & Service Delivery Planner specializing in project management, CRM, and workflow automation.">
+    <title>Ajay Sharma | Service Delivery Planner Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="#home">AS<span>.</span></a>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="#about" class="nav-link">About me</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#portfolio" class="nav-link">Projects</a>
+            <a href="#contact" class="btn btn-primary nav-contact-btn">Contact Me</a>
+        </nav>
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section (Split Screen Design) -->
+        <section id="home" class="hero-section">
+            <!-- Left Side (Light Theme Area) -->
+            <div class="hero-left">
+                <div class="hero-content scroll-reveal-left">
+                    <p class="greeting">Hi, I am</p>
+                    <h1 class="hero-name">Ajay Sharma</h1>
+                    <h2 class="hero-title">Analyst - Service Delivery Planner</h2>
+                    <p class="hero-description">
+                        Specializing in end-to-end project lifecycles, requirements gathering, CRM execution, and process automation with over 2 years of proven success.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="mailto:ajsharma2626@gmail.com" class="btn btn-secondary">Get In Touch</a>
+                        <div class="hero-socials">
+                            <a href="mailto:ajsharma2626@gmail.com" class="social-icon" aria-label="Email" title="ajsharma2626@gmail.com">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/ajay-sharma-4931251a4" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="tel:+919306972719" class="social-icon" aria-label="Phone" title="+91 9306972719">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side (Dark Theme Area) -->
+            <div class="hero-right">
+                <!-- 3D Three.js Canvas Container -->
+                <div id="threejs-canvas-container"></div>
+                
+                <!-- Profile Photo Aligned to Bottom -->
+                <div class="photo-container scroll-reveal-right">
+                    <img src="assets/ajay_photo.jpg" alt="Ajay Sharma" class="profile-photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subtitle">01 / Get to know me</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text-card">
+                        <h3>My Story</h3>
+                        <p>
+                            I am a detail-oriented <strong>Service Delivery Planner</strong> and <strong>Analyst</strong> with more than 2 years of hands-on experience driving requirements gathering, task tracking, and delivery coordination. I specialize in managing complex ticket lifecycles using advanced CRM systems and Agile project management tools. 
+                        </p>
+                        <p>
+                            My approach focuses on streamlining communications across cross-functional teams, identifying and mitigating delivery risks, and designing automated workflows that maximize operational efficiency. I bring a strong analytical perspective combined with an MCA background to bridge the gap between business needs and technical solutions.
+                        </p>
+                    </div>
+                    <div class="about-info-cards">
+                        <!-- Education Card -->
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="info-content">
+                                <h3>Education</h3>
+                                <p class="degree">MCA (Masters of Computer Application)</p>
+                                <p class="inst">GLA University</p>
+                                <span class="duration">08/2022 – 07/2024</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Languages Card -->
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-language"></i></div>
+                            <div class="info-content">
+                                <h3>Languages</h3>
+                                <div class="lang-item">
+                                    <span>Hindi</span>
+                                    <div class="dots-rating">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                    </div>
+                                </div>
+                                <div class="lang-item">
+                                    <span>English</span>
+                                    <div class="dots-rating">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subtitle">02 / Professional Journey</span>
+                    <h2 class="section-title">Experience</h2>
+                </div>
+                <div class="timeline">
+                    <!-- Current Role -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="date-badge">Jan 2024 – Present</span>
+                            <h3>Analyst – Service Delivery Planner</h3>
+                            <h4 class="company">WPP Production <span class="highlight">(Microsoft Account)</span></h4>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> Gurugram, India</p>
+                            <ul class="duties-list">
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>Project Delivery Management:</strong> Oversee end-to-end execution of Microsoft account initiatives, governing work intake, requirements elicitation, task division, and stakeholder alignment.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>Milestone Tracking:</strong> Command project progress dashboards, CRM ticket logs, and key deliverables tracking to guarantee on-time releases.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>Team Coordination:</strong> Unify cross-functional departments, coordinate dependencies, manage resource capacity, and clear critical blockers.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>Documentation & Governance:</strong> Draft and audit standard operating procedures (SOPs), templates, and operational trackers to boost organizational consistency.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>Quality Assurance & Communication:</strong> Lead project delivery reviews, ensure QA/UAT readiness, and manage executive reporting.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>Process Optimization:</strong> Orchestrate AI-driven workflow automations that minimize manual work and increase project visibility.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subtitle">03 / Tech & Domain Expertise</span>
+                    <h2 class="section-title">My Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <!-- Skill Card 1 -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-tasks skill-icon"></i>
+                            <h3>Project Management</h3>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <!-- Skill Card 2 -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-laptop-code skill-icon"></i>
+                            <h3>Enterprise CMS</h3>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <!-- Skill Card 3 -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-comments skill-icon"></i>
+                            <h3>Stakeholder Comm.</h3>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <!-- Skill Card 4 -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-square-poll-vertical skill-icon"></i>
+                            <h3>Analytics</h3>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <!-- Skill Card 5 -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-diagram-project skill-icon"></i>
+                            <h3>Operations & Quality</h3>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <!-- Skill Card 6 -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-clipboard-check skill-icon"></i>
+                            <h3>Workflow Validation</h3>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Certifications Section -->
+        <section id="portfolio" class="portfolio-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subtitle">04 / Projects & Achievements</span>
+                    <h2 class="section-title">Projects & Certs</h2>
+                </div>
+                
+                <h3 class="subsection-title">Featured Project</h3>
+                <div class="projects-grid">
+                    <!-- Project Card -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-tag">AI & Automation</div>
+                            <h3>AI Knowledge Bot - Delivery Assistant</h3>
+                            <span class="project-date">11/2025 – 03/2026</span>
+                            <p>
+                                Designed and developed an interactive AI-powered assistant using <strong>Microsoft Copilot Studio</strong>. Built an extensive, structured knowledge base from operational files to assist Service Delivery Planners during complex requirement gathering, data analysis, and process compliance. Reduced onboarding friction and standardized delivery pipelines.
+                            </p>
+                            <div class="project-tech">
+                                <span>Microsoft Copilot Studio</span>
+                                <span>Knowledge Graphs</span>
+                                <span>AI Agent</span>
+                            </div>
+                        </div>
+                        <div class="project-visual">
+                            <div class="bot-animation-container">
+                                <!-- Floating bot icon representing project -->
+                                <div class="bot-sphere">
+                                    <i class="fa-solid fa-robot"></i>
+                                    <div class="orbiting-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title" style="margin-top: 4rem;">Certificates</h3>
+                <div class="certificates-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                        <h4>Foundations of Project Management</h4>
+                        <p>Google / Coursera</p>
+                    </div>
+                    <!-- Cert 2 -->
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                        <h4>Intro to Generative AI</h4>
+                        <p>Google / Coursera</p>
+                    </div>
+                    <!-- Cert 3 -->
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                        <h4>Power BI</h4>
+                        <p>Microsoft / Coursera</p>
+                    </div>
+                    <!-- Cert 4 -->
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                        <h4>SQL for Data Analysis</h4>
+                        <p>Coursera</p>
+                    </div>
+                    <!-- Cert 5 -->
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                        <h4>Marketing Automation</h4>
+                        <p>Coursera</p>
+                    </div>
+                    <!-- Cert 6 -->
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                        <h4>Stakeholder Comm. Strategies</h4>
+                        <p>Coursera</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subtitle">05 / Start a conversation</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                <div class="contact-grid">
+                    <!-- Left: Details & Copy Widgets -->
+                    <div class="contact-details">
+                        <h3>Let's collaborate!</h3>
+                        <p>I'm always open to discussing new opportunities, workflow optimizations, or project coordination queries.</p>
+                        
+                        <div class="contact-widgets">
+                            <!-- Email Copy -->
+                            <div class="copy-widget" id="email-widget">
+                                <i class="fa-regular fa-envelope widget-icon"></i>
+                                <div class="widget-info">
+                                    <span class="widget-label">Email me</span>
+                                    <span class="widget-value">ajsharma2626@gmail.com</span>
+                                </div>
+                                <button class="copy-btn" data-copy="ajsharma2626@gmail.com" aria-label="Copy Email">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Phone Copy -->
+                            <div class="copy-widget" id="phone-widget">
+                                <i class="fa-solid fa-phone widget-icon"></i>
+                                <div class="widget-info">
+                                    <span class="widget-label">Call me</span>
+                                    <span class="widget-value">+91 9306972719</span>
+                                </div>
+                                <button class="copy-btn" data-copy="9306972719" aria-label="Copy Phone">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <!-- Location Info -->
+                            <div class="copy-widget">
+                                <i class="fa-solid fa-location-dot widget-icon"></i>
+                                <div class="widget-info">
+                                    <span class="widget-label">Location</span>
+                                    <span class="widget-value">Gurugram, Haryana, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Glassmorphism Contact Form -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message, Ajay will get back to you soon!'); this.reset();">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Your Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Let's build something great..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                Send Message <i class="fa-solid fa-paper-plane" style="margin-left: 0.5rem;"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Ajay Sharma. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Projects</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
